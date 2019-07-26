@@ -1,0 +1,16 @@
+<%= form_with(model: [ @list, @item ], local: true) do |form| %>
+<p>
+  <%= form.label :item %><br>
+  <%= form.text_field :item %>
+</p>
+
+<p>
+  <%= form.label :description %><br>
+  <%= form.text_field :description %>
+</p>
+
+<p>
+ <%= form.submit%>
+</p>
+
+<% end %>

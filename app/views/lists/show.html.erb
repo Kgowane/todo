@@ -1,0 +1,18 @@
+<h3>
+  <strong>Title</strong>
+  <%= @list.title %>
+</h3>
+
+
+<p>
+  <strong>Description</strong>
+  <%= @list.description %>
+</p>
+
+<p><strong>Added Items</strong></p>
+<%= render @list.items %>
+
+<p>Do you want to add a new item?</p>
+<%= link_to 'Click Here to Add Item', new_list_item_path(@list) %><br><br><br>
+
+<%= link_to 'Back', lists_path %>
